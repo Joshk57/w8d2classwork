@@ -57,4 +57,26 @@ const exponent2 = function(base, exp) {
 }
 
 // console.log(exponent(5, 0))
-console.log(exponent2(5,3))
+// console.log(exponent2(5,3))
+
+const fibonacci = function(n) {
+    if (n === 1) {
+        return [0];
+    }
+    if (n === 2) {
+        return [0,1];
+    }
+    let arr = fibonacci(n-1);
+    arr = arr.concat(arr[arr.length-1] + arr[arr.length-2])
+    return arr;
+};
+
+// console.log(fibonacci(8))
+
+const deepDup = function(arr) {
+
+    let newArr = arr[0]
+    typeof Array
+    newArr = newArr.concat(deepDup(arr.slice(1)))
+
+}
