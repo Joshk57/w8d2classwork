@@ -31,6 +31,6 @@ Array.prototype.myReduce = function(callback, initialValue) {
 }
 
 
-console.log([1, 2, 3].myReduce(function(acc, el) {
-    return acc + el;
-  }, 2))
+// console.log([1, 2, 3].myReduce(function(acc, el) {
+//     return acc + el;
+//   }, 2))
